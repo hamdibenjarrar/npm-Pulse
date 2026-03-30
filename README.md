@@ -1,6 +1,6 @@
 ﻿<div align="center">
 
-<img src="public/logo-animated.svg" alt="npm Pulse" width="380">
+<img src="https://raw.githubusercontent.com/hamdibenjarrar/npm-Pulse/main/public/logo-animated.svg" alt="npm Pulse" width="380">
 
 # npm Pulse
 
