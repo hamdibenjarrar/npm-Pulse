@@ -15,7 +15,6 @@
 
 import type {
   PulseScore,
-  ScoreBreakdown,
   DimensionScore,
   Factor,
   Signal,

@@ -148,7 +148,7 @@ const scoringDims = [
           <div class="flex items-center gap-2 text-sm">
             <span class="text-zinc-500">Base URL</span>
             <code class="text-emerald-400 bg-zinc-900 border border-zinc-800 rounded-lg px-3 py-1 font-mono text-xs">
-              https://npm-pulse-hamdibenjarrars-projects.vercel.app
+              https://npm-pulse.vercel.app
             </code>
           </div>
         </div>

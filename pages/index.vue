@@ -38,7 +38,7 @@ function quickSearch(pkg: string) {
 
 async function copyEndpoint() {
   if (!scoreResult.value) return
-  await navigator.clipboard.writeText(`curl https://npm-pulse-hamdibenjarrars-projects.vercel.app/api/v1/score/${scoreResult.value.package}`)
+  await navigator.clipboard.writeText(`curl https://npm-pulse.vercel.app/api/v1/score/${scoreResult.value.package}`)
   copied.value = true
   setTimeout(() => { copied.value = false }, 2000)
 }
@@ -264,7 +264,7 @@ function barColor(score: number) {
             </button>
           </div>
           <div class="bg-zinc-800/60 border border-zinc-700/50 rounded-lg px-4 py-3 font-mono text-xs text-zinc-300 overflow-x-auto">
-            <span class="text-zinc-600 select-none">$ </span>curl https://npm-pulse-hamdibenjarrars-projects.vercel.app/api/v1/score/<span class="text-emerald-400">{{ scoreResult.package }}</span>
+            <span class="text-zinc-600 select-none">$ </span>curl https://npm-pulse.vercel.app/api/v1/score/<span class="text-emerald-400">{{ scoreResult.package }}</span>
           </div>
         </div>
 

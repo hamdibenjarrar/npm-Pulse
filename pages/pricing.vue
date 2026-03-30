@@ -1,6 +1,6 @@
 <!-- pages/pricing.vue — npm Pulse Pricing -->
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 
 useHead({ title: 'Pricing — npm Pulse' })
 
