@@ -1,1 +1,20 @@
-²ø0‰Ûa
+ï»¿<svg width="600" height="140" viewBox="0 0 600 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="140" rx="16" fill="#09090b"/>
+  <rect x="1" y="1" width="598" height="138" rx="15" stroke="#10b981" stroke-opacity="0.25" stroke-width="1.5"/>
+  <rect x="20" y="25" width="220" height="90" rx="10" fill="#0f1412" stroke="#10b981" stroke-opacity="0.15" stroke-width="1"/>
+  <line x1="20" y1="70" x2="240" y2="70" stroke="#10b981" stroke-opacity="0.07" stroke-width="1"/>
+  <line x1="130" y1="25" x2="130" y2="115" stroke="#10b981" stroke-opacity="0.07" stroke-width="1"/>
+  <path d="M30 70 L65 70 L75 70 L87 42 L99 98 L109 54 L119 70 L155 70 L165 70 L177 56 L187 84 L197 70 L230 70" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="99" cy="98" r="4" fill="#10b981" opacity="0.9"/>
+  <circle cx="99" cy="98" r="7" fill="#10b981" opacity="0.15"/>
+  <text x="270" y="62" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="32" font-weight="700" fill="#f4f4f5" letter-spacing="-0.5">npm Pulse</text>
+  <text x="272" y="86" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#10b981" opacity="0.9" letter-spacing="0.5">Package Intelligence API</text>
+  <line x1="271" y1="93" x2="520" y2="93" stroke="#10b981" stroke-opacity="0.3" stroke-width="1"/>
+  <rect x="272" y="102" width="52" height="20" rx="4" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-opacity="0.5" stroke-width="1"/>
+  <circle cx="284" cy="112" r="3.5" fill="#10b981"/>
+  <text x="291" y="116" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" font-weight="600" fill="#10b981" letter-spacing="0.8">LIVE</text>
+  <rect x="334" y="102" width="44" height="20" rx="4" fill="#6366f1" fill-opacity="0.15" stroke="#6366f1" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="346" y="116" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" font-weight="600" fill="#a5b4fc" letter-spacing="0.5">v0.1</text>
+  <rect x="388" y="102" width="42" height="20" rx="4" fill="#71717a" fill-opacity="0.15" stroke="#71717a" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="398" y="116" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" font-weight="600" fill="#a1a1aa" letter-spacing="0.5">MIT</text>
+</svg>
