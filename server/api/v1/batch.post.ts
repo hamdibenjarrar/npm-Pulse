@@ -45,15 +45,14 @@ export default defineEventHandler(async (event) => {
       }),
     )
 
-    for (let j = 0; j < batchResults.length; j++) {
-      const result = batchResults[j]
+    for (const [j, result] of batchResults.entries()) {
       if (result.status === 'fulfilled') {
         results.push(result.value)
       }
       else {
         results.push({
-          package: batch[j].package,
-          error: result.reason?.message || 'Analysis failed',
+          package: batch[j]?.package ?? 'unknown',
+          error: (result.reason as Error)?.message || 'Analysis failed',
         })
       }
     }

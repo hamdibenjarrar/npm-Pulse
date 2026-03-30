@@ -419,8 +419,9 @@ function generateSignals(
   }
 
   // Warning signals
-  const daysSincePublish = npm.time[npm.version]
-    ? Math.floor((Date.now() - new Date(npm.time[npm.version]).getTime()) / (1000 * 60 * 60 * 24))
+  const timeStr = npm.time[npm.version]
+  const daysSincePublish = timeStr
+    ? Math.floor((Date.now() - new Date(timeStr).getTime()) / (1000 * 60 * 60 * 24))
     : 999
   if (daysSincePublish > 365) {
     signals.push({

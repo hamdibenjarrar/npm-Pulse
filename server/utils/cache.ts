@@ -29,12 +29,15 @@ export async function getCachedScore(
   if (!client) return null
 
   try {
-    const { data, error } = await client
+    type ScoreRow = { score_data: PulseScore; updated_at: string }
+    const queryResult = await client
       .from('scores')
       .select('score_data, updated_at')
       .eq('package_name', packageName)
       .eq('version', version)
       .single()
+    const data = queryResult.data as ScoreRow | null
+    const error = queryResult.error
 
     if (error || !data) return null
 
@@ -66,7 +69,8 @@ export async function setCachedScore(
   if (!client) return
 
   try {
-    await client.from('scores').upsert(
+    type InsertRow = { package_name: string; version: string; score_data: PulseScore; updated_at: string }
+    await (client.from('scores') as unknown as { upsert: (data: InsertRow, opts: { onConflict: string }) => Promise<unknown> }).upsert(
       {
         package_name: packageName,
         version,

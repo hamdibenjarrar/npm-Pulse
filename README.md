@@ -1,11 +1,6 @@
-<div align="center">
+﻿<div align="center">
 
-<svg width="72" height="72" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="22" fill="#09090b"/>
-  <rect x="1" y="1" width="98" height="98" rx="21" stroke="#10b981" stroke-opacity="0.3" stroke-width="1.5"/>
-  <path d="M10 50 L28 50 L36 20 L46 80 L54 36 L62 50 L90 50" stroke="#10b981" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="50" cy="50" r="3.5" fill="#10b981" opacity="0.7"/>
-</svg>
+<img src="public/logo-animated.svg" alt="npm Pulse" width="380">
 
 # npm Pulse
 

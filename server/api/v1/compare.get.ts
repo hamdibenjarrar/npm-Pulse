@@ -42,13 +42,12 @@ export default defineEventHandler(async (event) => {
   const scores: PulseScore[] = []
   const errors: string[] = []
 
-  for (let i = 0; i < results.length; i++) {
-    const result = results[i]
+  for (const [i, result] of results.entries()) {
     if (result.status === 'fulfilled') {
       scores.push(result.value)
     }
     else {
-      errors.push(`Failed to analyze "${packageNames[i]}": ${result.reason?.message}`)
+      errors.push(`Failed to analyze "${packageNames[i] ?? 'unknown'}": ${(result.reason as Error)?.message}`)
     }
   }
 
@@ -65,7 +64,7 @@ export default defineEventHandler(async (event) => {
 
   // Generate recommendation
   const top = scores[0]
-  const recommendation = scores.length >= 2
+  const recommendation = scores.length >= 2 && top
     ? `${top.package} leads with a Pulse score of ${top.score}/100. `
       + `Strongest in ${getStrongestDimension(top)}.`
     : undefined
@@ -88,5 +87,5 @@ function getStrongestDimension(score: PulseScore): string {
     { name: 'popularity', score: dims.popularity.score },
   ]
   entries.sort((a, b) => b.score - a.score)
-  return entries[0].name
+  return entries[0]?.name ?? 'maintenance'
 }

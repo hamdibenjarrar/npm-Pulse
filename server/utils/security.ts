@@ -108,6 +108,7 @@ export async function fetchSecurityBatch(
     const batchResults = res.results || []
     for (let i = 0; i < packages.length; i++) {
       const pkg = packages[i]
+      if (!pkg) continue
       const vulnResult = batchResults[i]
       const vulns = (vulnResult?.vulns || []).length
 

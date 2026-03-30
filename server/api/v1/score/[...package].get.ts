@@ -73,10 +73,11 @@ export default defineEventHandler(async (event) => {
     })
   }
 
+  let cached: Awaited<ReturnType<typeof getCachedScore>> = null
   try {
     // ── Step 1: Check cache ──
     const packageVersion = requestedVersion || 'latest'
-    const cached = await getCachedScore(fullName, packageVersion)
+    cached = await getCachedScore(fullName, packageVersion)
 
     if (cached && !cached.isStale) {
       return cached.score
