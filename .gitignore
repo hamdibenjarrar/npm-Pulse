@@ -24,3 +24,14 @@ pnpm-debug.log*
 *.swo
 .DS_Store
 Thumbs.db
+
+.vercel
+
+# Temp / generated files
+build-output.txt
+generate-favicon.py
+git-status.txt
+commit-msg.txt
+vercel-deploy.txt
+vercel-prod.txt
+git-out.txt

@@ -11,8 +11,8 @@
 
 **Package Intelligence API** — Know every package before you install it.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-npm--pulse.vercel.app-10b981?style=flat-square&logo=vercel&logoColor=white)](https://npm-pulse.vercel.app)
-[![API](https://img.shields.io/badge/API-v0.1-6366f1?style=flat-square)](https://npm-pulse.vercel.app/docs)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-npm--pulse.vercel.app-10b981?style=flat-square&logo=vercel&logoColor=white)](https://npm-pulse-hamdibenjarrars-projects.vercel.app)
+[![API](https://img.shields.io/badge/API-v0.1-6366f1?style=flat-square)](https://npm-pulse-hamdibenjarrars-projects.vercel.app/docs)
 [![License](https://img.shields.io/badge/License-MIT-zinc?style=flat-square)](LICENSE)
 [![by MYNTHISM](https://img.shields.io/badge/by-MYNTHISM-09090b?style=flat-square)](https://github.com/hamdibenjarrar)
 
@@ -27,7 +27,7 @@ npm Pulse is a free, open REST API that computes a **health score** for any npm 
 No black boxes. No vendor lock-in. Fully open algorithm.
 
 ```bash
-curl https://npm-pulse.vercel.app/api/v1/score/react
+curl https://npm-pulse-hamdibenjarrars-projects.vercel.app/api/v1/score/react
 ```
 
 ```json
@@ -64,7 +64,7 @@ Final score = `Σ (dimension_score × weight)` → normalized to 0–100 → gra
 
 ## API Reference
 
-Base URL: `https://npm-pulse.vercel.app`
+Base URL: `https://npm-pulse-hamdibenjarrars-projects.vercel.app`
 
 ### GET `/api/v1/score/:package`
 
@@ -72,13 +72,13 @@ Fetch the Pulse score for any npm package.
 
 ```bash
 # Basic
-curl https://npm-pulse.vercel.app/api/v1/score/lodash
+curl https://npm-pulse-hamdibenjarrars-projects.vercel.app/api/v1/score/lodash
 
 # Scoped package
-curl https://npm-pulse.vercel.app/api/v1/score/@nuxt/kit
+curl https://npm-pulse-hamdibenjarrars-projects.vercel.app/api/v1/score/@nuxt/kit
 
 # Specific version
-curl https://npm-pulse.vercel.app/api/v1/score/react@18.2.0
+curl https://npm-pulse-hamdibenjarrars-projects.vercel.app/api/v1/score/react@18.2.0
 ```
 
 ### POST `/api/v1/batch`
@@ -86,7 +86,7 @@ curl https://npm-pulse.vercel.app/api/v1/score/react@18.2.0
 Audit your entire `package.json` in one request (up to 50 packages).
 
 ```bash
-curl -X POST https://npm-pulse.vercel.app/api/v1/batch \
+curl -X POST https://npm-pulse-hamdibenjarrars-projects.vercel.app/api/v1/batch \
   -H "Content-Type: application/json" \
   -d '{"packages": ["react", "vue", "lodash", "express"]}'
 ```
@@ -96,7 +96,7 @@ curl -X POST https://npm-pulse.vercel.app/api/v1/batch \
 Side-by-side comparison of 2–5 packages with a recommendation.
 
 ```bash
-curl "https://npm-pulse.vercel.app/api/v1/compare?packages=react,vue,svelte"
+curl "https://npm-pulse-hamdibenjarrars-projects.vercel.app/api/v1/compare?packages=react,vue,svelte"
 ```
 
 
